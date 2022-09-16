@@ -51,7 +51,7 @@ def printError(message):
 # Convert the given annotation to a label image
 def createLabelImage(annotation, encoding, classes, outline=None):
     # the size of the image
-    if classes == 's2v':
+    if classes == 's2v' or classes == 's2v2':
         name2label = name2label_s2v
     elif classes == '':
         name2label = name2label_orig
